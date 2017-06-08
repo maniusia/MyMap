@@ -1,0 +1,50 @@
+#menu ul {
+    padding: 0px;
+    margin: 0px;
+    font-family: fantasy;
+}
+
+#temp {
+    margin-top: 1em;
+    font-family: fantasy;
+    font-size: 1em;
+    color: #e5702d;
+}
+
+#map {
+    width: 100vw;
+    height: 100vh;
+}
+
+.markerListItem {
+    list-style: none;
+    text-align: center;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    cursor: pointer;
+    cursor: hand;
+}
+
+.selector {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-family: fantasy;
+}
+
+input[type=text],
+input[type=url],
+input[type=email],
+input[type=password],
+input[type=tel] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    display: block;
+    margin: 0;
+    width: 100%;
+    height: 40px;
+}
+
+body,
+.row {
+    margin: 0px;
+}
