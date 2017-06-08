@@ -202,8 +202,7 @@ var ViewModel = function() {
                 var long = data.results[0].geometry.location.lng;
                 self.markerList.push(new Marker(marker.title, long, lat));
             }).fail(function() {
-                // Prints message when function fails
-                infoWindow.setContent("Information Unavailable for [" + marker.title() + "]");;
+                    mapError();
             });
         });
     };
@@ -237,6 +236,9 @@ var ViewModel = function() {
 var viewModel = new ViewModel();
 ko.applyBindings(viewModel);
 
+function mapError() {
+  alert('Sorry! For some reason the map could not load :(');
+}
 //List of locations to be shown/filtered.
 var locations = [{
         location: {
